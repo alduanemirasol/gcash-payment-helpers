@@ -17,7 +17,6 @@ def get_local_ip():
         s.close()
     return ip
 
-# Generate QR code for the index page
 ip = get_local_ip()
 url = f"http://{ip}:{PORT}/index.html"
 
@@ -34,7 +33,6 @@ def no_cache(response):
     response.headers['Expires'] = '0'
     return response
 
-# Route to serve static files without caching
 @app.route('/<path:filename>')
 def serve_file(filename):
     response = make_response(send_from_directory(os.getcwd(), filename))
