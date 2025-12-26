@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GCash Payment</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="page">
+        <!-- Header with GCash logo -->
+        <header class="header">
+            <img src="images/gcash_logo.png" alt="GCash" class="logo" />
+        </header>
+
+        <div class="card">
+            <!-- Security notice -->
+            <p class="secure-text">
+                <img src="images/verified_user_icon.svg" alt="Verified User" class="icon" />
+                A safer way to pay!
+            </p>
+
+            <!-- Payment instructions -->
+            <p class="instruction">
+                Complete the payment in your GCash app<br>by tapping the button below
+            </p>
+
+            <!-- Open GCash button -->
+            <button class="gcash-btn" id="openButton">Open in GCash</button>
+
+            <!-- Alternative option for users to upload QR -->
+            <p class="or-text">
+                Or Log in to GCash and upload this QR image<br>using the QR Reader.
+            </p>
+
+            <!-- QR Code display -->
+            <div class="qr-box">
+                <img src="images/qr_code_150.png" alt="QR Code" id="qrImage" />
+            </div>
+
+            <!-- Download QR Code button -->
+            <button class="gcash-btn" id="downloadQrBtn">
+                <img src="images/download_icon.svg" alt="Download" class="icon" />
+                Download QR Code
+            </button>
+
+            <!-- Copy mobile number button -->
+            <button class="gcash-btn gcash-btn--secondary" id="copyNumberBtn">
+                <img src="images/content_copy_icon.svg" alt="Copy" class="icon" />
+                Copy Mobile Number
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
